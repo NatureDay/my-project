@@ -2,12 +2,13 @@
     <div>
         <group>
             <cell title="title" value="value"></cell>
+            <datetime title="日期"></datetime>
         </group>
     </div>
 </template>
 
 <script>
-import { Group, Cell } from 'vux'
+import { Group, Cell, Datetime } from 'vux'
 
 export default {
     data () {
@@ -20,7 +21,8 @@ export default {
     },
     components: {
         Group,
-        Cell
+        Cell,
+        Datetime
     }
 }
 </script>
