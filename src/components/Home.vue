@@ -25,7 +25,7 @@ export default {
             alert('列表');
         },
         edit: function () {
-            alert('编辑');
+            this.$router.push({ name: 'edit' });
         },
         detail: function () {
             alert('详情');
@@ -38,48 +38,48 @@ export default {
 
 <style scoped>
 .home {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 header {
-    width: 100%;
-    height: 10%;
-    background-color: blue;
-    font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 10%;
+  background-color: blue;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 footer {
-    width: 100%;
-    height: 5%;
-    background-color: grey;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  width: 100%;
+  height: 5%;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 .content {
-    width: 100%;
-    height: 80%;
-    background-color: greenyellow;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  width: 100%;
+  height: 80%;
+  background-color: greenyellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 .item {
-    color: #000;
-    font-size: 25px;
+  color: #000;
+  font-size: 25px;
 }
 </style>
