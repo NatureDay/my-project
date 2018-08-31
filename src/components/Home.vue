@@ -1,7 +1,14 @@
 <template>
-    <div class="home">
+    <section class="home">
         <header>主页</header>
-    </div>
+        <section class="content">
+            <div class="item" @click="login">登录</div>
+            <div class="item" @click="list">列表</div>
+            <div class="item" @click="edit">编辑</div>
+            <div class="item" @click="detail">详情</div>
+        </section>
+        <footer>这是我的测试页</footer>
+    </section>
 </template>
 
 <script>
@@ -11,33 +18,68 @@ export default {
         }
     },
     methods: {
+        login: function () {
+            alert('登录');
+        },
+        list: function () {
+            alert('列表');
+        },
+        edit: function () {
+            alert('编辑');
+        },
+        detail: function () {
+            alert('详情');
+        },
     },
     components: {
     }
 }
 </script>
 
-<style>
-* {
-    padding: 0;
-    margin: 0;
-}
-html {
-    font-size: 62.5%;
+<style scoped>
+.home {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 header {
-    text-align: center;
+    width: 100%;
+    height: 10%;
+    background-color: blue;
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
     color: white;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-.home {
+footer {
     width: 100%;
-    height: 5rem;
-    background-color: blue;
+    height: 5%;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.content {
+    width: 100%;
+    height: 80%;
+    background-color: greenyellow;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.item {
+    color: #000;
+    font-size: 25px;
 }
 </style>
