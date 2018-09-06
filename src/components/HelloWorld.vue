@@ -4,7 +4,7 @@
         <h1>{{ msg }}</h1>
         <h2>Essential Links</h2>
         <router-link to="/home">我的demo</router-link>
-        <ul>
+        <!-- <ul>
             <li>
                 <a href="https://vuejs.org" target="_blank">
                     Core Docs
@@ -53,7 +53,7 @@
                     awesome-vue
                 </a>
             </li>
-        </ul>
+        </ul> -->
     </div>
 </template>
 

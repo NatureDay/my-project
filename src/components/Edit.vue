@@ -1,14 +1,15 @@
 <template>
     <div>
         <group>
-            <cell title="title" value="value"></cell>
+            <search placeholder="请输入文字"> </search>
+            <x-input title="请输入内容" type="number"></x-input>
             <datetime title="日期"></datetime>
         </group>
     </div>
 </template>
 
 <script>
-import { Group, Cell, Datetime } from 'vux'
+import { Group, Search, XInput, Datetime } from 'vux'
 
 export default {
     data () {
@@ -21,7 +22,8 @@ export default {
     },
     components: {
         Group,
-        Cell,
+        Search,
+        XInput,
         Datetime
     }
 }

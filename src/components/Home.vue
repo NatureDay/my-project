@@ -4,7 +4,7 @@
         <section class="content">
             <div class="item" @click="login">登录</div>
             <div class="item" @click="list">列表</div>
-            <div class="item" @click="edit">编辑</div>
+            <div class="item" @click="edit">demo在编辑</div>
             <div class="item" @click="detail">详情</div>
         </section>
         <footer>这是我的测试页</footer>
