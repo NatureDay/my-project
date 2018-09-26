@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Home from '@/components/Home'
 import Edit from '@/components/Edit'
+import VuxDemo from '@/components/vuxDemo'
 
 Vue.use(Router)
 
@@ -21,6 +22,11 @@ export default new Router({
             path: '/edit',
             name: 'edit',
             component: Edit
+        },
+        {
+            path: '/vuxDemo',
+            name: 'vuxDemo',
+            component: VuxDemo
         }
     ]
 })
