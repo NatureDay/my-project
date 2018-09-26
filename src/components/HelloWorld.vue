@@ -3,7 +3,8 @@
         <img src="../assets/logo.png">
         <h1>{{ msg }}</h1>
         <h2>Essential Links</h2>
-        <router-link to="/home">我的demo</router-link>
+        <br/>
+        <router-link to="/home" class="router">点击进入我的demo</router-link>
         <!-- <ul>
             <li>
                 <a href="https://vuejs.org" target="_blank">
@@ -90,4 +91,8 @@ a {
     margin-top: 60px;
     text-align: center;
 }
+.router {
+     font-size: 25px;
+}
+
 </style>
