@@ -9,7 +9,11 @@ export default new Vuex.Store({
         token: 'wefwjfowiqfjqifjweioqfpqjewfwefewqfqew',
     },
     mutations: {
-        increment: state => state.count++,
-        decrement: state => state.count--
+        increment: function () {
+            this.state.count++
+        },
+        decrement: function () {
+            this.state.count--
+        }
     }
 })

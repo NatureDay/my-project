@@ -2,10 +2,10 @@
     <section class="home">
         <header>主页</header>
         <section class="content">
-            <!-- <div class="item" @click="login">登录</div>
+            <div class="item" @click="login">登录</div>
             <div class="item" @click="list">列表</div>
             <div class="item" @click="edit">编辑</div>
-            <div class="item" @click="detail">详情</div> -->
+            <div class="item" @click="detail">详情</div>
             <div class="item" @click="vuxDemo">VuxDemo</div>
         </section>
         <footer>这是我的测试页</footer>
@@ -26,7 +26,7 @@ export default {
             alert('列表');
         },
         edit: function () {
-             alert('编辑');
+            this.$router.push({ name: 'edit' });
         },
         detail: function () {
             alert('详情');
